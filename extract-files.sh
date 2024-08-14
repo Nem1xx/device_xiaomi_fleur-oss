@@ -53,6 +53,13 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup {
+    case "$1" in
+        vendor/lib*/libcam.utils.sensorprovider.so)
+            "$PATCHELF" --add-needed "libshim_sensors.so" "$2"
+            ;;
+}
+
 # Initialize the helper
 setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
 
