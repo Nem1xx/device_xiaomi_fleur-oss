@@ -156,7 +156,6 @@ vendor/bin/lib3a.ccu.dm;NODEPS
 vendor/bin/lib3a.ccu.pm;NODEPS
 vendor/bin/mt6660_calibration
 vendor/bin/rt5512_calibration
-vendor/bin/cal_tool
 vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so
