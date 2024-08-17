@@ -741,9 +741,12 @@ vendor/lib64/libimagebuffer_wrapper.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so
 vendor/lib64/libimageio_plat_pipe.so
+vendor/lib64/libmfllcore.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
 vendor/lib64/libmibokeh_mt6873.so
+vendor/lib64/libmiStereoFactoryRemapBasicLib.so
+vendor/lib64/libmiStereoFactoryRemapLib.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libmsnr.so
 vendor/lib64/libmtkcam.atmseventmgr.so
@@ -811,7 +814,7 @@ vendor/lib64/libmtkcam_pipelinepolicy.so
 vendor/lib64/libmtkcam_pipelinepolicy_factory.so
 vendor/lib64/libmtkisp_metadata.so
 vendor/lib64/libpq_prot.so
-vendor/lib64/libsensorndkbridge.so
+vendor/lib64/libQstAlgo.so
 vendor/lib64/libstereoinfoaccessor_vsdof.so
 vendor/lib64/libvideofilter_only.so
 vendor/lib64/libvidhance.so
@@ -896,6 +899,9 @@ vendor/etc/camera/sceneDetection.xml
 vendor/etc/camera/sr_params.xml
 vendor/etc/camera/vidhance_calibration
 
+# Display (Configs)
+vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml
+vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 
 # Firmware
 vendor/firmware/BT_FW.cfg
