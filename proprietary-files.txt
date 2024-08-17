@@ -148,7 +148,14 @@ vendor/etc/audio_param/VolumeGainMap_ParamUnitDesc.xml
 vendor/etc/audio_param/Volume_AudioParam.xml
 vendor/etc/audio_param/Volume_ParamUnitDesc.xml
 
+# Bluetooth
+vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
+vendor/firmware/BT_FW.cfg
+
 # Camera
+system_ext/lib/vendor.mediatek.hardware.camera.atms@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
 vendor/bin/hw/camerahalserver
 vendor/etc/init/camerahalserver.rc
 vendor/bin/lib3a.ccu.ddr;NODEPS
@@ -741,6 +748,7 @@ vendor/lib64/libimagebuffer_wrapper.so
 vendor/lib64/libimageio.so
 vendor/lib64/libimageio_plat_drv.so
 vendor/lib64/libimageio_plat_pipe.so
+vendor/lib64/libmialgoengine.so
 vendor/lib64/libmfllcore.so
 vendor/lib64/libmialgo_sd.so
 vendor/lib64/libmialgo_utils.so
@@ -849,6 +857,7 @@ vendor/lib64/vendor.mediatek.hardware.camera.isphal@1.1.so
 vendor/lib64/vendor.mediatek.hardware.camera.lomoeffect@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.postproc@1.0.so
 vendor/lib64/vendor.mediatek.hardware.camera.security@1.0.so
+vendor/firmware/lib3a.ccu
 
 # Camera (Configs)
 vendor/etc/102_SummerDay.png
@@ -904,36 +913,7 @@ vendor/etc/dsi_panel_k7s_38_0c_0a_video_mi.xml
 vendor/etc/dsi_panel_k7s_38_0c_0b_video_mi.xml
 
 # Firmware
-vendor/firmware/BT_FW.cfg
 vendor/firmware/Conf_MultipleTest.ini
-vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
-vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
-vendor/firmware/WMT_SOC.cfg
-vendor/firmware/aw8622_high_f0_LONG_cfg.bin
-vendor/firmware/aw8622_high_f0_M_cfg.bin
-vendor/firmware/aw8622_high_f0_Q_cfg.bin
-vendor/firmware/aw8622_high_f0_Z_cfg.bin
-vendor/firmware/aw8622_high_f0_cali_cfg.bin
-vendor/firmware/aw8622_high_f0_need_setup_M_cfg.bin
-vendor/firmware/aw8622_high_f0_need_setup_Q_cfg.bin
-vendor/firmware/aw8622_high_f0_need_setup_Z_cfg.bin
-vendor/firmware/aw8622_low_f0_LONG_cfg.bin
-vendor/firmware/aw8622_low_f0_M_cfg.bin
-vendor/firmware/aw8622_low_f0_Q_cfg.bin
-vendor/firmware/aw8622_low_f0_Z_cfg.bin
-vendor/firmware/aw8622_low_f0_cali_cfg.bin
-vendor/firmware/aw8622_low_f0_need_setup_M_cfg.bin
-vendor/firmware/aw8622_low_f0_need_setup_Q_cfg.bin
-vendor/firmware/aw8622_low_f0_need_setup_Z_cfg.bin
-vendor/firmware/aw8622_mid_f0_LONG_cfg.bin
-vendor/firmware/aw8622_mid_f0_M_cfg.bin
-vendor/firmware/aw8622_mid_f0_Q_cfg.bin
-vendor/firmware/aw8622_mid_f0_Z_cfg.bin
-vendor/firmware/aw8622_mid_f0_cali_cfg.bin
-vendor/firmware/aw8622_mid_f0_need_setup_M_cfg.bin
-vendor/firmware/aw8622_mid_f0_need_setup_Q_cfg.bin
-vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
-vendor/firmware/fm_cust.cfg
 vendor/firmware/focaltech_ts_fw_samsung.bin
 vendor/firmware/fs1815.fsm
 vendor/firmware/gt9896s_cfg_6781v01_1080x2280.bin
@@ -970,17 +950,49 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
-vendor/firmware/lib3a.ccu
+vendor/firmware/remoteproc_scp
+
+# FM Radio
+vendor/firmware/fm_cust.cfg
 vendor/firmware/mt6631_fm_v1_coeff.bin
 vendor/firmware/mt6631_fm_v1_patch.bin
 vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
-vendor/firmware/remoteproc_scp
-vendor/firmware/soc2_2_ram_bt_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_bt_2a_1_hdr.bin
-vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
-vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
-vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+
+# NFC
 vendor/firmware/st21nfc_fw7.bin
 
+# Vibrator
+vendor/firmware/aw8622_high_f0_LONG_cfg.bin
+vendor/firmware/aw8622_high_f0_M_cfg.bin
+vendor/firmware/aw8622_high_f0_Q_cfg.bin
+vendor/firmware/aw8622_high_f0_Z_cfg.bin
+vendor/firmware/aw8622_high_f0_cali_cfg.bin
+vendor/firmware/aw8622_high_f0_need_setup_M_cfg.bin
+vendor/firmware/aw8622_high_f0_need_setup_Q_cfg.bin
+vendor/firmware/aw8622_high_f0_need_setup_Z_cfg.bin
+vendor/firmware/aw8622_low_f0_LONG_cfg.bin
+vendor/firmware/aw8622_low_f0_M_cfg.bin
+vendor/firmware/aw8622_low_f0_Q_cfg.bin
+vendor/firmware/aw8622_low_f0_Z_cfg.bin
+vendor/firmware/aw8622_low_f0_cali_cfg.bin
+vendor/firmware/aw8622_low_f0_need_setup_M_cfg.bin
+vendor/firmware/aw8622_low_f0_need_setup_Q_cfg.bin
+vendor/firmware/aw8622_low_f0_need_setup_Z_cfg.bin
+vendor/firmware/aw8622_mid_f0_LONG_cfg.bin
+vendor/firmware/aw8622_mid_f0_M_cfg.bin
+vendor/firmware/aw8622_mid_f0_Q_cfg.bin
+vendor/firmware/aw8622_mid_f0_Z_cfg.bin
+vendor/firmware/aw8622_mid_f0_cali_cfg.bin
+vendor/firmware/aw8622_mid_f0_need_setup_M_cfg.bin
+vendor/firmware/aw8622_mid_f0_need_setup_Q_cfg.bin
+vendor/firmware/aw8622_mid_f0_need_setup_Z_cfg.bin
+
+# WLAN
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2_1.bin
+vendor/firmware/WIFI_RAM_CODE_soc2_2_2a_1.bin
+vendor/firmware/soc2_2_ram_wifi_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_wifi_2a_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2_1_hdr.bin
+vendor/firmware/soc2_2_ram_mcu_2a_1_hdr.bin
+vendor/firmware/WMT_SOC.cfg
