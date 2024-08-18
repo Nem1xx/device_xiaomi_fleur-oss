@@ -6,6 +6,10 @@
 
 DEVICE_PATH := device/xiaomi/fleur
 
+# Camera
+PRODUCT_PACKAGES += \
+    libcamera2ndk_vendor
+
 # NFC
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_fleur/android.hardware.nfc.hcef.xml \
