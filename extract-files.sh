@@ -68,7 +68,7 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
             ;;
 	vendor/etc/camera/camerabooster.json)
-            sed -i 's/sea/fleur/' "$2"
+            sed -i 's/"sea"/"fleur"/' "$2"
             ;;
     esac
 }

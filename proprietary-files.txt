@@ -155,7 +155,6 @@ vendor/firmware/BT_FW.cfg
 
 # Camera
 system_ext/lib64/vendor.mediatek.hardware.camera.atms@1.0.so
-system_ext/lib64/vendor.mediatek.hardware.camera.isphal@1.0.so
 vendor/bin/hw/camerahalserver
 vendor/bin/lib3a.ccu.dm;NODEPS
 vendor/bin/lib3a.ccu.pm;NODEPS
