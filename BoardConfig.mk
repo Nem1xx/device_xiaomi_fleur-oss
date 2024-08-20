@@ -29,7 +29,8 @@ TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_fleur
 TARGET_RECOVERY_DEVICE_MODULES := init_xiaomi_fleur
 
 # Kernel
-BOARD_PREBUILT_DTBOIMAGE := $(COMMON_PATH)/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
