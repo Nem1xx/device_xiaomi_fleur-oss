@@ -67,6 +67,11 @@ function blob_fixup {
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             "${PATCHELF}" --replace-needed "libbinder.so" "libbinder-v32.so" "${2}"
             ;;
+        vendor/lib64/libmtkcam_featurepolicy.so)
+            # evaluateCaptureConfiguration()
+            xxd -p "${2}" | sed "s/90b0034e88740b9/90b003428028052/g" | xxd -r -p > "${2}".patched
+            mv "${2}".patched "${2}"
+            ;;
 	vendor/etc/camera/camerabooster.json)
             sed -i 's/"sea"/"fleur"/' "$2"
             ;;
