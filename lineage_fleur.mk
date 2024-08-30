@@ -14,15 +14,10 @@ $(call inherit-product, device/xiaomi/mt6781-common/mt6781.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/fleur/device.mk)
 
-# Inherit some common PixelOS stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common LineageOS stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-# Boot Animation
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_SCREEN_HEIGHT := 2400
-TARGET_SCREEN_WIDTH := 1080
-
-PRODUCT_NAME := aosp_fleur
+PRODUCT_NAME := lineage_fleur
 PRODUCT_DEVICE := fleur
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi

@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_fleur.mk
+    $(LOCAL_DIR)/lineage_fleur.mk
